@@ -53,6 +53,8 @@
     }
 
     function logOut() {
+      liff.logout()
+      window.location.reload()
     }
 
     function closed() {
@@ -86,8 +88,8 @@
         await liff.sendMessages([
           {
             "type": "sticker",
-            "stickerId": 10855,
-            "packageId": 789
+            "stickerId": "10855",
+            "packageId": "789"
           }
         ])
         alert("Message sent")
